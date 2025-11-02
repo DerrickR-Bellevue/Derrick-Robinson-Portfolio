@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Derrick Robinson — Portfolio</title>
+  <meta name="description" content="Portfolio of Derrick Robinson — data science, analytics, and storytelling projects." />
+  <meta name="author" content="Derrick Robinson" />
+  <meta property="og:title" content="Derrick Robinson — Portfolio" />
+  <meta property="og:description" content="Data science & analytics projects, dashboards, and write‑ups." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/0?v=4" />
+  <meta name="theme-color" content="#0f172a" />
+  <style>
+    :root{
+      --bg:#0b1020;      /* deep midnight */
+      --panel:#121a33;   /* card background */
+      --text:#e6eefc;    /* main text */
+      --muted:#a2b2d3;   /* secondary text */
+      --brand:#7dd3fc;   /* accent */
+      --brand-2:#a78bfa; /* secondary accent */
+      --ring:rgba(125,211,252,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:radial-gradient(1200px 600px at 100% -10%, rgba(167,139,250,.15),transparent),radial-gradient(900px 600px at -10% 0%, rgba(125,211,252,.12),transparent),var(--bg);color:var(--text);}
+    a{color:inherit;text-decoration:none}
+    a.link{color:var(--brand)}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 0}
+    .brand{font-weight:800;letter-spacing:.3px}
+    .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.1);background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border-radius:999px;padding:8px 14px;color:var(--muted)}
+    .btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(180deg,#1f2b55,#131b36);border:1px solid rgba(255,255,255,.12);padding:10px 14px;border-radius:12px;color:var(--text);box-shadow:0 6px 18px rgba(0,0,0,.35);transition:transform .05s ease, box-shadow .2s}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 12px 28px rgba(0,0,0,.45)}
+    .grid{display:grid;gap:18px}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:36px 0}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:18px}
+    .card:hover{border-color:rgba(125,211,252,.35)}
+    .avatar{width:120px;height:120px;border-radius:16px;object-fit:cover;border:2px solid rgba(125,211,252,.3);box-shadow:0 10px 22px rgba(0,0,0,.35)}
+    .hero h1{font-size:clamp(28px,4vw,42px);line-height:1.1;margin:0 0 8px}
+    .muted{color:var(--muted)}
+    .badge{display:inline-flex;gap:6px;align-items:center;background:rgba(167,139,250,.12);color:#e9e1ff;border:1px solid rgba(167,139,250,.35);padding:6px 10px;border-radius:999px;font-size:12px}
+    .section{padding:22px 0 8px}
+    .section h2{font-size:20px;margin:0 0 12px}
+    .projects{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+    .project{position:relative;overflow:hidden}
+    .project .thumb{height:160px;border-radius:12px;object-fit:cover;width:100%;border:1px solid rgba(255,255,255,.1)}
+    .project h3{margin:10px 0 6px;font-size:16px}
+    .tags{display:flex;flex-wrap:wrap;gap:6px}
+    .tag{font-size:12px;color:var(--muted);border:1px solid rgba(255,255,255,.15);border-radius:999px;padding:4px 8px}
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+    .resume a{border-bottom:1px dashed rgba(125,211,252,.5)}
+    .footer{padding:28px 0;color:var(--muted);font-size:14px}
+    .kbd{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);padding:2px 6px;border-radius:6px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="nav">
+      <div class="row">
+        <span class="pill">🎯 Portfolio</span>
+        <span class="pill">📍 USA</span>
+      </div>
+      <nav class="row">
+        <a class="btn" href="#projects" aria-label="Skip to projects">Projects</a>
+        <a class="btn" href="#about" aria-label="Skip to about">About</a>
+        <a class="btn" href="#contact" aria-label="Skip to contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <div class="row" style="align-items:center; gap:18px">
+          <img class="avatar" src="https://avatars.githubusercontent.com/u/583231?v=4" alt="Profile" />
+          <div>
+            <h1>Derrick Robinson</h1>
+            <p class="muted">Data science & analytics — modeling, EDA, and data storytelling.
+              I turn messy data into clear decisions.</p>
+            <div class="row" style="margin-top:8px">
+              <a class="btn" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="btn" href="#contact">Get in touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card resume">
+        <h2 style="margin-top:0">Snapshot</h2>
+        <p>• Tools: Python (pandas, scikit‑learn, matplotlib), R (tidyverse), SQL, Tableau/Power BI<br>
+           • Interests: childcare prices, recommender systems, time series, NLP<br>
+           • Looking for: data analyst / data scientist roles & portfolio collaborations</p>
+        <p>Resume: <a class="link" href="#" onclick="alert('Replace with your PDF link (e.g., in this repo).');return false;">Download (PDF)</a></p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Featured Projects</h2>
+      <div class="grid projects">
+        <article class="card project">
+          <img class="thumb" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop" alt="Childcare prices dashboard" />
+          <h3>Childcare Prices — Policy Dashboard</h3>
+          <p class="muted">Interactive county‑level dashboard highlighting affordability, with a policy brief.</p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Tableau</span><span class="tag">Storytelling</span>
+          </div>
+          <p class="row" style="margin-top:8px">
+            <a class="btn" href="#" onclick="alert('Replace with GitHub repo URL');return false;">Code</a>
+            <a class="btn" href="#" onclick="alert('Replace with live demo URL');return false;">Live</a>
+          </p>
+        </article>
+        <article class="card project">
+          <img class="thumb" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" alt="Recommender system" />
+          <h3>Movie Recommender (MovieLens)</h3>
+          <p class="muted">Item‑based collaborative filtering with evaluation and narrative write‑up.</p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Recsys</span><span class="tag">EDA</span>
+          </div>
+          <p class="row" style="margin-top:8px">
+            <a class="btn" href="#" onclick="alert('Replace with GitHub repo URL');return false;">Code</a>
+            <a class="btn" href="#" onclick="alert('Replace with notebook or app URL');return false;">Demo</a>
+          </p>
+        </article>
+        <article class="card project">
+          <img class="thumb" src="https://images.unsplash.com/photo-1529429612776-d504121d1eb0?q=80&w=1200&auto=format&fit=crop" alt="Retail time series" />
+          <h3>US Retail Sales — Forecasting</h3>
+          <p class="muted">Time‑series forecasting with train/test split and RMSE reporting.</p>
+          <div class="tags">
+            <span class="tag">Time Series</span><span class="tag">StatsModels</span><span class="tag">RMSE</span>
+          </div>
+          <p class="row" style="margin-top:8px">
+            <a class="btn" href="#" onclick="alert('Replace with GitHub repo URL');return false;">Code</a>
+            <a class="btn" href="#" onclick="alert('Replace with report URL');return false;">Report</a>
+          </p>
+        </article>
+        <article class="card project">
+          <img class="thumb" src="https://images.unsplash.com/photo-1556740772-1a741367b93e?q=80&w=1200&auto=format&fit=crop" alt="White House visitor analysis" />
+          <h3>White House Visitor Logs — Analysis</h3>
+          <p class="muted">Cleaning 25 CSVs, joining, and crafting a stakeholder‑friendly narrative.</p>
+          <div class="tags">
+            <span class="tag">pandas</span><span class="tag">Visualization</span><span class="tag">Ethics</span>
+          </div>
+          <p class="row" style="margin-top:8px">
+            <a class="btn" href="#" onclick="alert('Replace with GitHub repo URL');return false;">Code</a>
+            <a class="btn" href="#" onclick="alert('Replace with slides/report URL');return false;">Slides</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="card">
+        <p>Hi! I’m Derrick — I love building clear, reproducible analyses and communicating insights to different audiences. Below is a quick timeline of recent work.</p>
+        <ul>
+          <li>2025 — National Database of Childcare Prices multi‑medium project (dashboard, infographic, policy brief).</li>
+          <li>2025 — TSA complaint data storytelling (audience‑first design, 6+ visuals).</li>
+          <li>2025 — White House Visitor Logs exploration with ethics & design reflections.</li>
+          <li>2024 — Predictive analytics case study & MovieLens recommender.</li>
+        </ul>
+        <p>Outside of class, I tinker with dashboards, recommenders, and time‑series problems.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Best way to reach me: <a class="link" href="mailto:you@example.com">you@example.com</a></p>
+        <p class="muted">Tip: host your resume PDF in this repo and link it above. Add issue templates to accept feedback on projects.</p>
+        <div class="row">
+          <a class="btn" href="https://github.com/new" target="_blank" rel="noopener">Create GitHub Repo</a>
+          <a class="btn" href="https://pages.github.com/" target="_blank" rel="noopener">Enable GitHub Pages</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> Derrick Robinson • Built with ❤ and vanilla HTML/CSS</div>
+      <div>Theme accents: <span class="kbd">#7dd3fc</span> & <span class="kbd">#a78bfa</span></div>
+    </footer>
+  </div>
+
+  <script>
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
